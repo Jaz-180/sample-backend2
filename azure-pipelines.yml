@@ -24,11 +24,6 @@ steps:
     pip install -r ./sa/requirements.txt
   displayName: 'Install dependencies'
 
-- script: |
-    pip install pytest pytest-azurepipelines
-    pytest
-  displayName: 'pytest'
-
 
 - task: Docker@2
   inputs:
